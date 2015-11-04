@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -33321,20 +33321,7 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <text x="0" y="-19.47" size="0.8128" layer="51" ratio="15" align="center">Suggested Cutout Zone</text>
 </package>
 <package name="ANYLINK_DP1276">
-<text x="7.62" y="-22.86" size="0.635" layer="51" rot="R270">RESET</text>
-<text x="8.89" y="-22.86" size="0.635" layer="51" rot="R270">DIO0</text>
-<text x="10.16" y="-22.86" size="0.635" layer="51" rot="R270">DIO1</text>
-<text x="11.43" y="-22.86" size="0.635" layer="51" rot="R270">DIO2</text>
-<text x="12.7" y="-22.86" size="0.635" layer="51" rot="R270">DIO3</text>
-<text x="13.97" y="-22.86" size="0.635" layer="51" rot="R270">DIO4</text>
-<text x="15.24" y="-22.86" size="0.635" layer="51" rot="R270">DIO5</text>
-<text x="2.54" y="-22.86" size="0.635" layer="51" rot="R270">VCC</text>
-<text x="5.08" y="-22.86" size="0.635" layer="51" rot="R270">GND</text>
-<text x="18.288" y="-18.034" size="0.635" layer="25">SCK</text>
-<text x="18.288" y="-16.764" size="0.635" layer="25">MISO</text>
-<text x="18.288" y="-15.494" size="0.635" layer="25">MOSI</text>
-<text x="18.288" y="-14.224" size="0.635" layer="25">NSS</text>
-<wire x1="0" y1="0" x2="16.002" y2="0" width="0.127" layer="48"/>
+<wire x1="0" y1="0" x2="16.51" y2="0" width="0.127" layer="48"/>
 <wire x1="0" y1="0" x2="0" y2="-22.098" width="0.127" layer="48"/>
 <wire x1="0" y1="-22.098" x2="16.51" y2="-22.098" width="0.127" layer="48"/>
 <wire x1="16.51" y1="-22.098" x2="16.51" y2="0" width="0.127" layer="48"/>
@@ -33355,16 +33342,19 @@ Source: http://focus.ti.com/lit/ml/mpds029b/mpds029b.pdf / slma002.pdf</descript
 <smd name="ZGND2" x="0.389" y="-2.286" dx="1.2" dy="1.5" layer="1" rot="R90"/>
 <smd name="ZRFIO" x="0.389" y="-3.81" dx="1.2" dy="1.5" layer="1" rot="R90"/>
 <smd name="ZGND3" x="0.389" y="-5.334" dx="1.2" dy="1.5" layer="1" rot="R90"/>
-<text x="18.288" y="-12.954" size="0.635" layer="25">VCC</text>
-<text x="-4.191" y="-4.064" size="0.635" layer="51">RFIO</text>
-<text x="-4.191" y="-2.794" size="0.635" layer="51">RGND</text>
-<text x="-4.191" y="-5.334" size="0.635" layer="51">RGND2</text>
-<text x="3.81" y="-12.7" size="1.27" layer="21">ANYLINK
+<text x="3.81" y="-7.62" size="1.27" layer="21" font="vector" ratio="15">ANYLINK
 DP 1276</text>
-<dimension x1="1.778" y1="-3.81" x2="1.778" y2="-2.286" x3="2.286" y3="-3.048" textsize="1.27" layer="51"/>
 <rectangle x1="1.5" y1="-21.1" x2="14.6" y2="-0.4" layer="40"/>
 <rectangle x1="0.4" y1="-21.1" x2="1.7" y2="-6.6" layer="40"/>
 <rectangle x1="14.6" y1="-11.2" x2="15.8" y2="-0.6" layer="40"/>
+<wire x1="2.54" y1="-15.24" x2="2.54" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-19.05" x2="5.08" y2="-19.05" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-19.05" x2="5.08" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-15.24" x2="2.54" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="-20.32" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-20.32" x2="15.24" y2="-20.32" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-12.7" x2="7.62" y2="-12.7" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
